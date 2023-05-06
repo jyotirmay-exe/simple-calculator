@@ -1,12 +1,42 @@
+<!-- 
+    Minor Industrial Project for Intrainz Internship
+ -->
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
     <title>Calculator App by Jyotirmay Kumar Jha</title>
 </head>
 <body>
-    
+    <div class="container">
+        <div class="main">
+            <input type="text" placeholder="0">
+            <!-- init buttons and text field -->
+            <button onclick="allClear()" >Cl</button>
+            <button onclick="displayUpdate('^')" >x<sup>2</sup></button>
+            <button onclick="displayUpdate('%')">%</button>
+            <button onclick="displayUpdate('/')">/</button>
+            <button onclick="displayUpdate('7')">7</button>
+            <button onclick="displayUpdate('8')">8</button>
+            <button onclick="displayUpdate('9')">9</button>
+            <button onclick="displayUpdate('*')">*</button>
+            <button onclick="displayUpdate('4')">4</button>
+            <button onclick="displayUpdate('5')">5</button>
+            <button onclick="displayUpdate('6')">6</button>
+            <button onclick="displayUpdate('-')">-</button>
+            <button onclick="displayUpdate('1')">1</button>
+            <button onclick="displayUpdate('2')">2</button>
+            <button onclick="displayUpdate('3')">3</button>
+            <button onclick="displayUpdate('+')">+</button>
+            <button onclick="displayUpdate('0')">0</button>
+            <button onclick="displayUpdate('.')">.</button>
+            <button onclick="del()" >Del</button>
+            <button onclick="compute()">=</button>
+        </div>
+    </div>
 </body>
 </html>
