@@ -15,7 +15,7 @@
     <div class="container">
         <!-- <h1>Classic-type Calculator</h1> -->
         <div class="main">
-            <input type="text" placeholder="0">
+            <input type="text" class="display" id="display" value="0" disabled="true">
             <!-- init buttons and text field -->
             <button onclick="allClear()" >AC</button>
             <button onclick="displayUpdate('^')" >x<sup>2</sup></button>
@@ -39,5 +39,7 @@
             <button onclick="compute()">=</button>
         </div>
     </div>
+
+    <script type="text/javascript" src="script.js"></script>
 </body>
 </html>
