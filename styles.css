@@ -43,7 +43,8 @@
     box-shadow: inset 8px 8px 8px black;
     text-align: end;
     font-size: 36px;
-    font-family: digital-mono;
+    font-family: monospace;
+    /* font-family: digital-mono; */
     margin: auto;
     margin-top: 20px;
     margin-bottom: 20px;
