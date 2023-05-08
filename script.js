@@ -17,7 +17,9 @@ function allClear()
 function del()
 {
     display.value = display.value.substring(0,display.value.length-1);
-    if(display.value=='') { display.value = '0'; }
+    if(display.value=='') { 
+        display.value = '0'; 
+    }
 }
 
 function displayUpdate(arg)
@@ -79,7 +81,7 @@ function compute()
             return 0;
         }
 
-        display.value="= "+value;
+        display.value="= "+(Math.round(value*1000) / 1000);
     }
     catch(e)
     {
