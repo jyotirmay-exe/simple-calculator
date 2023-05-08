@@ -10,7 +10,7 @@ function allClear()
 {
     const val = display.value.length;
     display.setSelectionRange(val, val);
-    display.focus();
+    // display.focus();
     display.value=0;
 }
 
