@@ -1,8 +1,13 @@
+@font-face{
+    font-family:'digital-mono';
+    src: url('font/digital-mono.ttf');
+}
+
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    background-color: #1f1f1f;
+    /* background-color: #1f1f1f; */
     font-family: sans-serif;
     outline: none;
     color: #9fabb4;
@@ -23,39 +28,43 @@
     background-color: #9b9b9b;
     padding: 15px;
     border-radius: 30px;
-    box-shadow: 10px 10px 10px 5px black;;
+    box-shadow: 6px 6px 10px black, inset 1px 1px 1px 5px rgb(110, 110, 110);
     display: grid;
     grid-template-columns: repeat(4,85px);
 }
 
 .display{
-    color: rgb(133, 133, 133);
+    color: #838383;
     grid-column: span 4;
-    height: 70px;
+    height: 80px;
     width: 342px;
     border-radius: 10px;
     background-color: #1f1f1f;
     box-shadow: inset 8px 8px 8px black;
     text-align: end;
-    font-size: 30px;
+    font-size: 36px;
+    font-family: digital-mono;
     margin: auto;
-    margin-top: 40px;
+    margin-top: 20px;
     margin-bottom: 20px;
     padding: 2%;
 }
 
 button{
+    background-color: #1f1f1f;
     font-family: monospace;
     font-weight: 500;
     height: 70px;
     width: 70px;
     box-shadow: inset 5px 5px #4e4e4e;
     border: none;
-    border-radius: 30%;
-    margin: 5px;
+    border-radius: 45%;
+    margin: auto;
+    margin-bottom: 12px;
     font-size: 1.2pc;
 }
 
 button:hover{
     background-color: #383838;
+    box-shadow: inset 3px 3px rgb(32, 32, 32);
 }

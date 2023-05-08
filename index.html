@@ -8,38 +8,43 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="styles.css">
-    <title>Classic Calculator by Jyotirmay Kumar Jha</title>
+    <title>Classic Simple Calculator</title>
 </head>
 <body>
-    <div class="container">
-        <!-- <h1>Classic-type Calculator</h1> -->
-        <div class="main">
-            <input type="text" class="display" id="display" value="0" disabled="true">
-            <!-- init buttons and text field -->
-            <button onclick="allClear()" >AC</button>
-            <button onclick="displayUpdate('^')" >x<sup>2</sup></button>
-            <button onclick="displayUpdate('%')">%</button>
-            <button onclick="displayUpdate('/')">/</button>
-            <button onclick="displayUpdate('7')">7</button>
-            <button onclick="displayUpdate('8')">8</button>
-            <button onclick="displayUpdate('9')">9</button>
-            <button onclick="displayUpdate('*')">*</button>
-            <button onclick="displayUpdate('4')">4</button>
-            <button onclick="displayUpdate('5')">5</button>
-            <button onclick="displayUpdate('6')">6</button>
-            <button onclick="displayUpdate('-')">-</button>
-            <button onclick="displayUpdate('1')">1</button>
-            <button onclick="displayUpdate('2')">2</button>
-            <button onclick="displayUpdate('3')">3</button>
-            <button onclick="displayUpdate('+')">+</button>
-            <button onclick="displayUpdate('0')">0</button>
-            <button onclick="displayUpdate('.')">.</button>
-            <button onclick="del()" >Del</button>
-            <button onclick="compute()">=</button>
+    <div class="bg-dark bg-gradient">
+        <div class="container">
+            <!-- <h1>Classic-type Calculator</h1> -->
+            <div class="main">
+                <a style="color:rgb(107, 107, 107); font-family: sans-serif; font-size: 20px font-weight: bold; 
+                padding-left: 310px; margin-bottom: -10px;" onclick="displayHelp()">&#9432;</a>
+                <input type="text" class="display" id="display" value="0" onclick="return allClear()" onkeypress="return keyDown(event)">
+                <!-- init buttons and text field -->
+                <button onclick="allClear()" >AC</button>
+                <button onclick="displayUpdate('^')" >x<sup>2</sup></button>
+                <button onclick="displayUpdate('%')">%</button>
+                <button onclick="displayUpdate('/')">/</button>
+                <button onclick="displayUpdate('7')">7</button>
+                <button onclick="displayUpdate('8')">8</button>
+                <button onclick="displayUpdate('9')">9</button>
+                <button onclick="displayUpdate('*')">*</button>
+                <button onclick="displayUpdate('4')">4</button>
+                <button onclick="displayUpdate('5')">5</button>
+                <button onclick="displayUpdate('6')">6</button>
+                <button onclick="displayUpdate('-')">-</button>
+                <button onclick="displayUpdate('1')">1</button>
+                <button onclick="displayUpdate('2')">2</button>
+                <button onclick="displayUpdate('3')">3</button>
+                <button onclick="displayUpdate('+')">+</button>
+                <button onclick="displayUpdate('0')">0</button>
+                <button onclick="displayUpdate('.')">.</button>
+                <button onclick="del()" >Del</button>
+                <button onclick="compute()">=</button>
+            </div>
         </div>
     </div>
-
     <script type="text/javascript" src="script.js"></script>
 </body>
 </html>
