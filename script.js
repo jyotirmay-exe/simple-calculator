@@ -26,10 +26,8 @@ function displayUpdate(arg)
 {
     if(arg=='.')
     {
-        if(display.value="0") { 
-            display.value+=arg; 
-            return 0; 
-        }
+        display.value+=arg; 
+        return 0;
     }
 
     if(arg=='^')
