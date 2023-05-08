@@ -24,12 +24,18 @@ function displayUpdate(arg)
 {
     if(arg=='.')
     {
-        if(display.value="0") { display.value+=arg; return 0; }
+        if(display.value="0") { 
+            display.value+=arg; 
+            return 0; 
+        }
     }
 
     if(arg=='^')
     {
-        if(display.value[0]=="=") display.value=display.value.substring(1);
+        if(display.value[0]=="=") { 
+            display.value=display.value.substring(1);
+        }
+
         try{
             display.value = "= "+eval(display.value+'**2');
         }
@@ -37,6 +43,7 @@ function displayUpdate(arg)
         {
             if(e instanceof SyntaxError) display.value = "= Input Syntax Error";
         }
+
         return 0;
     }
     // clearing display from previous output or append for operation
@@ -47,9 +54,16 @@ function displayUpdate(arg)
         else
             display.value = "";
     }
-    if(display.value.substring(0,1)=='0.')  { display.value+=arg; return 0; }
-    if(display.value == 0) display.value=arg; // remove leading zeros
-    else display.value+=arg;
+
+    if(display.value.substring(0,1)=='0.') { 
+        display.value+=arg; 
+        return 0; 
+    }
+
+    if(display.value == 0) 
+        display.value=arg; // remove leading zeros
+    else  
+        display.value+=arg;
 }
 
 function compute()
@@ -69,7 +83,10 @@ function compute()
     }
     catch(e)
     {
-        if(display.value[0]=="="){ display.value="0"; return 0; }
+        if(display.value[0]=="=") { 
+            display.value="0"; 
+            return 0; 
+        }
         // alert("invalid data");
         display.value="= Input Syntax Error";
     }
@@ -77,13 +94,15 @@ function compute()
 
 function keyDown(event)
 {
-    if (event.keyCode == 13) compute();
+    if (event.keyCode == 13) {
+        compute();
+    }
 }
 
 function displayHelp()
 {
     var msg=
-            `+   :: Calculate Sum.\n
+`+   :: Calculate Sum.\n
 -    :: Calculate Difference\n
 /    :: Calculate quotient\n
 %    :: Calculate remainder\n
