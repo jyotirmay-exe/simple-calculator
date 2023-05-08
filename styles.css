@@ -64,6 +64,17 @@ button{
     font-size: 1.2pc;
 }
 
+.info{
+    text-decoration: none;
+    color:rgb(80, 80, 80); 
+    font-family: sans-serif; 
+    font-size: 20px; 
+    font-weight: bold; 
+    padding-left: 310px; 
+    margin-bottom: -10px; 
+    border: none;
+}
+
 button:hover{
     background-color: #383838;
     box-shadow: inset 3px 3px rgb(32, 32, 32);
